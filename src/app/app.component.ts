@@ -4,23 +4,14 @@ import { Hero } from './hero';
 
 @Component({
   selector: 'app-root',
-  template: `
-    <h1>{{ title }}</h1>
-    <h2>My favorite hero is: {{ myHero.name }}</h2>
-    <p>Heroes:</p>
-    <ul>
-      <li *ngFor="let hero of heroes">
-        {{ hero.name }}
-      </li>
-    </ul>
-    <p *ngIf="heroes.length > 3">There are many heroes!</p>
-    <!-- "The sum of 1 + 1 is 2" -->
-    <p>The sum of 1 + 1 is {{ 1 + 1 }}.</p>
-    <input type="text" value="Sarah" />
-  `,
+  templateUrl: 'app.component.html',
+  styleUrls: ['app.component.css'],
 })
 export class AppComponent {
   title = 'Tour of Heroes';
+  titleExample = '{{title}}';
+  isClicked = false;
+
   heroes = [
     new Hero(1, 'Windstorm'),
     new Hero(13, 'Bombasto'),
@@ -28,4 +19,8 @@ export class AppComponent {
     new Hero(20, 'Tornado'),
   ];
   myHero = this.heroes[0];
+
+  clickHandeler() {
+    return (this.isClicked = true);
+  }
 }
