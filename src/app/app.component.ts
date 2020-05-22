@@ -14,6 +14,8 @@ import { Hero } from './hero';
       </li>
     </ul>
     <p *ngIf="heroes.length > 3">There are many heroes!</p>
+    <!-- "The sum of 1 + 1 is 2" -->
+    <p>The sum of 1 + 1 is {{ 1 + 1 }}.</p>
   `,
 })
 export class AppComponent {
