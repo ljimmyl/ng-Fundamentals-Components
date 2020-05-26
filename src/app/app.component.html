@@ -1,7 +1,8 @@
 <div class="container">
   <h1>{{ title | uppercase }}</h1>
 
-  <app-tooltip-button></app-tooltip-button>
+  <app-tooltip-button [key]="'interpolation'"></app-tooltip-button>
+  <app-tooltip-button [key]="'interpolation2'"></app-tooltip-button>
 
   <h2>My favorite hero is: {{ myHero.name }}</h2>
   <p>Heroes:</p>

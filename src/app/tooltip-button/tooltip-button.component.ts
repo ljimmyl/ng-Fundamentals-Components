@@ -10,13 +10,14 @@ import EXPLANATIONS from '../explanation-phrases';
 export class TooltipButtonComponent implements OnInit {
   isClicked = false;
 
-  @Input() explanations = EXPLANATIONS;
+  explanations = EXPLANATIONS;
+  @Input() key;
 
   constructor() {}
 
   ngOnInit(): void {}
 
   clickHandeler() {
-    return (this.isClicked = true);
+    return (this.isClicked = !this.isClicked);
   }
 }
