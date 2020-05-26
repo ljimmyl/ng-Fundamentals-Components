@@ -1,11 +1,8 @@
 <div class="container">
   <h1>{{ title | uppercase }}</h1>
-  <p>What is the Angular part?</p>
-  <button (click)="clickHandeler()">Show</button>
 
-  <pre>
-  <p *ngIf="isClicked">The example above deals with interpolation of the {{titleExample}} property initialized in the AppComponent</p>
-</pre>
+  <app-tooltip-button></app-tooltip-button>
+
   <h2>My favorite hero is: {{ myHero.name }}</h2>
   <p>Heroes:</p>
   <ul>
@@ -15,6 +12,6 @@
   </ul>
   <p *ngIf="heroes.length > 3">There are many heroes!</p>
   <!-- "The sum of 1 + 1 is 2" -->
-  <p>The sum of 1 + 1 is {{ 1 + 1 }}.</p>
-  <input type="text" value="Sarah" />
+  <h2>Basics of two-way binding</h2>
+  <app-banana-in-a-box></app-banana-in-a-box>
 </div>

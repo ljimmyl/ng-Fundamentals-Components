@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 import { Hero } from './hero';
 
 @Component({
@@ -10,7 +9,6 @@ import { Hero } from './hero';
 export class AppComponent {
   title = 'Tour of Heroes';
   titleExample = '{{title}}';
-  isClicked = false;
 
   heroes = [
     new Hero(1, 'Windstorm'),
@@ -19,8 +17,4 @@ export class AppComponent {
     new Hero(20, 'Tornado'),
   ];
   myHero = this.heroes[0];
-
-  clickHandeler() {
-    return (this.isClicked = true);
-  }
 }
