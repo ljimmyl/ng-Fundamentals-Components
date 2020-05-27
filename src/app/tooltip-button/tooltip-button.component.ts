@@ -12,6 +12,7 @@ export class TooltipButtonComponent implements OnInit {
 
   explanations = EXPLANATIONS;
   @Input() key;
+  @Input() keyCode;
 
   constructor() {}
 

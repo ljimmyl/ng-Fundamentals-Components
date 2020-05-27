@@ -1,5 +1,12 @@
 <p class="explanationQuestion">What is the Angular part?</p>
-<button class="tooltipBtn" (click)="clickHandeler()">Show</button>
+<button
+  class="tooltipBtn"
+  (click)="clickHandeler()"
+  title="Show code example with explanation"
+>
+  Show
+</button>
 <p class="explanationText" *ngIf="isClicked">
-  {{ explanations[key] }}
+  {{ explanations[key] }} <br /><br />
+  <code class="codeExample">{{ explanations[keyCode] }}</code>
 </p>

@@ -10,6 +10,8 @@ export class AppComponent {
   title = 'Tour of Heroes';
   titleExample = '{{title}}';
 
+  values = '';
+
   heroes = [
     new Hero(1, 'Windstorm'),
     new Hero(13, 'Bombasto'),
@@ -17,4 +19,9 @@ export class AppComponent {
     new Hero(20, 'Tornado'),
   ];
   myHero = this.heroes[0];
+
+  onKey(event: any) {
+    this.values = event.target.value;
+    // console.log(event);
+  }
 }

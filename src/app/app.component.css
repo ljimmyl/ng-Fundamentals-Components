@@ -12,7 +12,9 @@ body {
   padding: 10px 50px;
   padding-bottom: 50px;
   margin: 0 auto;
+  margin-top: 50px;
   border: 1px dashed #ccc;
+  box-shadow: 0px 1px 3px 0 #ececec;
 }
 
 h1 {
