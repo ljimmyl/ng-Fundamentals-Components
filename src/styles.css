@@ -1,9 +1,11 @@
 input[type="text"] {
   padding: 7px;
+  outline: none;
 }
 
 button {
   border: none;
+  outline: none;
   border-radius: 2px;
   padding: 7px;
   text-transform: uppercase;

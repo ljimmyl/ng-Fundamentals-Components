@@ -11,6 +11,11 @@ export class AppComponent {
   titleExample = '{{title}}';
 
   values = '';
+  valuesWithRefVar = '';
+  boxValue = '';
+
+  color = '#ccccff';
+  miniAppColor: string;
 
   heroes = [
     new Hero(1, 'Windstorm'),
@@ -23,5 +28,14 @@ export class AppComponent {
   onKey(event: any) {
     this.values = event.target.value;
     // console.log(event);
+  }
+
+  onKeyWithReferenceVar(value: string) {
+    this.valuesWithRefVar += value + ' | ';
+  }
+
+  update(value: string) {
+    this.boxValue = value;
+    console.log(value);
   }
 }

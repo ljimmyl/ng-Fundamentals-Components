@@ -21,7 +21,92 @@
     The following example shows an event binding that implements a click handler
   </p>
   <app-click-me></app-click-me>
+
   <h2>$event object</h2>
+
   <input type="text" (keyup)="onKey($event)" />
   <p>{{ values }}</p>
+
+  <p>
+    Passing $event is a dubious practice. That breaks the separation of concerns
+    between the template <em>(what the user sees)</em> and the component
+    <em>(how the application processes user data)</em>.
+
+    <app-tooltip-button
+      [key]="'eventObject'"
+      [keyCode]="'eventObjectCode'"
+    ></app-tooltip-button>
+  </p>
+
+  <h3>Template Reference Variable</h3>
+  <input type="text" #box (keyup)="onKeyWithReferenceVar(box.value)" />
+  <p>{{ valuesWithRefVar }}</p>
+  <p>
+    Reference variables provide direct access to an element from within the
+    template.
+    <app-tooltip-button
+      [key]="'refVaviable'"
+      [keyCode]="'refVaviableCode'"
+    ></app-tooltip-button>
+  </p>
+
+  <h3>Key event filtering (with key.enter)</h3>
+  <input type="text" #box2 (keyup.enter)="update(box2.value)" />
+  <p>{{ boxValue }}</p>
+  <p>
+    Angular calls the event handler only when the user presses Enter.
+    <app-tooltip-button
+      [key]="'enterKey'"
+      [keyCode]="'enterKeyCode'"
+    ></app-tooltip-button>
+  </p>
+
+  <h2>Wish List</h2>
+
+  <app-wish-list></app-wish-list>
+
+  <h2>Attribute directive</h2>
+  <p>
+    An <b>Attribute</b> directive changes the appearance or behavior of a DOM
+    element. <br />
+    <br />
+    The highlighted color is controlled with a property binding in the example
+    below.
+  </p>
+  <p class="highlighted" [appHighlight]="'#cde6ff'">
+    Highlight me!
+  </p>
+  <p class="highlighted" [appHighlight]="color">
+    Highlighted with parent component's color
+  </p>
+
+  <app-tooltip-button
+    [key]="'attDirectiveKey'"
+    [keyCode]="'attDirectiveCode'"
+  ></app-tooltip-button>
+
+  <div class="attributeAppContainer">
+    <h2 class="attAppHeader">My Attribute Directive Mini-App</h2>
+    <h4>Pick a highlight color</h4>
+    <div>
+      <input
+        type="radio"
+        name="colors"
+        (click)="miniAppColor = '#e6ffcd'"
+      />Green
+      <input
+        type="radio"
+        name="colors"
+        (click)="miniAppColor = '#ffffb4'"
+      />Yellow
+      <input
+        type="radio"
+        name="colors"
+        (click)="miniAppColor = '#ccffff'"
+      />Cyan
+    </div>
+    <p class="highlighted" [appHighlight]="miniAppColor" defaultColor="#ff83a6">
+      Highlight me!
+    </p>
+  </div>
 </div>

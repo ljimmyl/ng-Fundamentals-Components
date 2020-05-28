@@ -17,10 +17,43 @@ body {
   box-shadow: 0px 1px 3px 0 #ececec;
 }
 
+.attributeAppContainer {
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 10px;
+  background-image: linear-gradient(
+    to bottom right,
+    #ffe7ff,
+    #e6ceff,
+    #e7f3ff,
+    #b5dbff
+  );
+  box-shadow: 0px 0px 5px 0px #e2e2e2;
+  border-radius: 0.5px;
+}
+
+.attAppHeader {
+  word-spacing: 7px;
+}
+
+.attributeAppContainer .highlighted {
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
 h1 {
   text-align: center;
 }
 
 pre > p {
   text-align: center;
+}
+
+.highlighted {
+  color: #414141;
+  font-weight: bold;
+  width: 50%;
+  border: 1px dashed #ccccff;
+  border-radius: 2px;
+  padding: 15px 5px;
 }

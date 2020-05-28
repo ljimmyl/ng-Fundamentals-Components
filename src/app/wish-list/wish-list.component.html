@@ -1,0 +1,12 @@
+<input
+  type="text"
+  #newWish
+  (keyup.enter)="addWish(newWish.value); newWish.value = ''"
+  (blur)="addWish(newWish.value); newWish.value = ''"
+/>
+
+<button class="wishListBtn" (click)="addWish(newWish.value)">Add</button>
+
+<ul>
+  <li *ngFor="let wish of wishes">{{ wish }}</li>
+</ul>
