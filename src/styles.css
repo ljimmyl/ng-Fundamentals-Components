@@ -1,3 +1,12 @@
+h1,
+h2 {
+  filter: drop-shadow(1px 1px 1px #cccccc);
+}
+
+input {
+  outline: none;
+}
+
 input[type="text"] {
   padding: 7px;
   outline: none;
@@ -16,4 +25,59 @@ button {
 button:hover {
   background-color: #ebebeb;
   color: #292bb8;
+}
+
+.falseBtn {
+  margin-right: 10px;
+}
+
+button.falseBtn,
+button.trueBtn {
+  width: 70px;
+  height: 35px;
+  padding: 10px;
+  text-align: center;
+}
+
+.falseBtn:hover {
+  background-color: #ff1e269c;
+  color: #363636;
+}
+
+.trueBtn:hover {
+  background-color: #87d67fab;
+  color: #363636;
+}
+
+.structuralP {
+  position: relative;
+  width: 400px;
+  height: 30px;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: #ecececaf;
+  border: 1px dashed #cccccc;
+}
+
+.structuralP p {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  line-height: 30px;
+}
+
+.pipesHeader {
+  display: block;
+  position: relative;
+  padding: 0;
+  height: 60px;
+  line-height: 60px;
+  filter: drop-shadow(1px 1px 1px #cccccc);
+}
+
+.pipesHeader > img {
+  position: absolute;
+  margin-left: 10px;
+  filter: drop-shadow(1px 1px 1px #cccccc);
 }

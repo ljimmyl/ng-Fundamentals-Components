@@ -109,4 +109,38 @@
       Highlight me!
     </p>
   </div>
+
+  <h2>Structural directives</h2>
+  <div class="structuralP">
+    <p *appNgIfFalse="condition">
+      Show this sentence unless the condition is true.
+    </p>
+  </div>
+  <button
+    class="falseBtn"
+    title="<p> says 'Show me'"
+    (click)="condition = false"
+  >
+    False
+  </button>
+  <button class="trueBtn" title="<p> says 'Hide me'" (click)="condition = true">
+    True
+  </button>
+
+  <h2 class="pipesHeader">
+    Pipes
+    <img
+      src="https://cdn3.iconfinder.com/data/icons/real-estate-v-1/64/Real_estate-19-512.png"
+      alt="pipes"
+      width="60"
+    />
+  </h2>
+  <h3>My Hero's Birthday</h3>
+  <app-using-pipes></app-using-pipes>
+  <app-tooltip-button
+    [key]="'pipeKey'"
+    [keyCode]="'pipeCode'"
+  ></app-tooltip-button>
+
+  <app-exponentiation-calc></app-exponentiation-calc>
 </div>

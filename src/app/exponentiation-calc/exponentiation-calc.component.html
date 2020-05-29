@@ -1,0 +1,42 @@
+<div class="calcContainer">
+  <img
+    class="hero hero-visibility1"
+    src="https://cdn4.iconfinder.com/data/icons/diversity-v2-0-volume-03/64/superhero-catwoman-caucasian-purple-costume-512.png"
+    alt="catwoman"
+  />
+  <img
+    class="hero hero-visibility2"
+    src="https://cdn4.iconfinder.com/data/icons/diversity-v2-0-volume-03/64/superhero-catwoman-caucasian-purple-costume-512.png"
+    alt="catwoman"
+  />
+  <img
+    class="hero hero-visibility3"
+    src="https://cdn4.iconfinder.com/data/icons/diversity-v2-0-volume-03/64/superhero-catwoman-caucasian-purple-costume-512.png"
+    alt="catwoman"
+  />
+  <img
+    class="station"
+    src="https://cdn1.iconfinder.com/data/icons/medical-96/660/Battery_charge_power-512.png"
+    alt="charging-station"
+  />
+  <h2>
+    Power Boost Calculator
+    <img
+      src="https://cdn2.iconfinder.com/data/icons/construction-147/64/pipes-Industry-pipeline-plumbing-water-512.png"
+      alt="pipe"
+      width="40"
+    />
+  </h2>
+  <div>
+    <span class="normalPower">Normal power:</span>
+    <input class="calcInput" [(ngModel)]="number" />
+  </div>
+  <div>
+    <span class="boostFactor">Boost factor:</span>
+    <input class="calcInput" [(ngModel)]="exponent" />
+  </div>
+  <p class="superPower">
+    Super Hero Power:
+    {{ number | exponentiation: exponent }}
+  </p>
+</div>

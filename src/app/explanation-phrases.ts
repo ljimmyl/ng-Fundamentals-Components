@@ -17,4 +17,7 @@ export default {
   attDirectiveKey:
     "The directive and the color is applied simultaneously in the same attribute like in the example below. With the help of property alias inside the directive the property is known as highlightColor. Outside the directive, where you bind to it, it's known as appHighlight.",
   attDirectiveCode: `<p [appHighlight]="color">Highlighted with parent component's color</p>`,
+  pipeKey:
+    "Inside the interpolation expression, you flow the component's birthday value through the pipe operator ( | ) to the Date pipe function on the right. ",
+  pipeCode: `<p>My hero's birthday is {{ birthday | date: format | uppercase }}</p>`,
 };

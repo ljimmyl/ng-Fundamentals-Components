@@ -1,0 +1,73 @@
+.calcContainer {
+  position: relative;
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 30px 10px;
+  text-align: center;
+  background: linear-gradient(to bottom, #e5e8e5, #ceffd8);
+  box-shadow: 0px 0px 5px 0px #e2e2e2;
+  border-radius: 0.5px;
+}
+
+.hero {
+  position: absolute;
+  width: 100px;
+}
+
+.hero-visibility1 {
+  width: 80px;
+  opacity: 0.2;
+  top: 91px;
+  left: 107px;
+}
+
+.hero-visibility2 {
+  width: 90px;
+  opacity: 0.5;
+  left: 102px;
+  top: 119px;
+}
+
+.hero-visibility3 {
+  width: 110px;
+  left: 92px;
+  top: 158px;
+}
+
+.station {
+  position: absolute;
+  width: 100px;
+  top: 30px;
+  left: 100px;
+  transform: rotate(90deg);
+}
+
+.calcContainer h2 {
+  text-transform: uppercase;
+}
+
+.calcInput {
+  font-size: 16px;
+  width: 50px;
+  height: 15px;
+  margin: 7px;
+  padding: 10px;
+}
+
+.normalPower {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #a8a8a8;
+}
+
+.boostFactor {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffa947;
+}
+
+.superPower {
+  text-transform: uppercase;
+  font-weight: bold;
+}

@@ -15,7 +15,10 @@ export class AppComponent {
   boxValue = '';
 
   color = '#ccccff';
+
   miniAppColor: string;
+
+  condition = 'false';
 
   heroes = [
     new Hero(1, 'Windstorm'),
