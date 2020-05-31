@@ -12,10 +12,12 @@ import { NgIfFalseDirective } from './ng-if-false.directive';
 import { UsingPipesComponent } from './using-pipes/using-pipes.component';
 import { ExponentiationPipe } from './exponentiation.pipe';
 import { ExponentiationCalcComponent } from './exponentiation-calc/exponentiation-calc.component';
+import { VersionChildComponent } from './version-child/version-child.component';
+import { VersionParentComponent } from './version-parent/version-parent.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
-  declarations: [AppComponent, TooltipButtonComponent, BananaInABoxComponent, ClickMeComponent, WishListComponent, HighlightDirective, NgIfFalseDirective, UsingPipesComponent, ExponentiationPipe, ExponentiationCalcComponent],
+  declarations: [AppComponent, TooltipButtonComponent, BananaInABoxComponent, ClickMeComponent, WishListComponent, HighlightDirective, NgIfFalseDirective, UsingPipesComponent, ExponentiationPipe, ExponentiationCalcComponent, VersionChildComponent, VersionParentComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

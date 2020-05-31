@@ -1,0 +1,6 @@
+<h3>Source code version</h3>
+<button class="minorVersion" (click)="newMinor()">New minor version</button>
+<button class="majorVersion" (click)="newMajor()">New major version</button>
+
+<!-- major and minor properties are bound with the child component properties -->
+<app-version-child [major]="major" [minor]="minor"></app-version-child>
